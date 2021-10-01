@@ -2,16 +2,16 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
-import { Infirmiere } from '../models/infirmiere';
+import { Patient } from '../models/patient';
 
 @Injectable({
   providedIn: 'root'
 })
-export class InfirmiereService {
+export class PatientService {
 
   constructor(private http: HttpClient) { }
 
-  getInfirmieres(): Observable<Infirmiere[]>{
-    return this.http.get<Infirmiere[]>(`${environment.medical_url}infirmieres`);
+  getPatients(): Observable<Patient[]>{
+    return this.http.get<Patient[]>(`${environment.medical_url}patients`);
   }
 }
