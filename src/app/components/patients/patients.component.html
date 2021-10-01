@@ -1,1 +1,5 @@
-<p>patients works!</p>
+<h1>Liste des patients</h1>
+
+<section>
+    <app-patients-card [patient]="patient" *ngFor="let patient of patients"></app-patients-card>
+</section>

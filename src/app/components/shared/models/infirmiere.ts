@@ -1,9 +1,11 @@
-export interface Infirmiere {
+import { Adresse } from "./adresse";
+
+export interface Infirmiere{
     id: number,
-    nom: string,
-    prenom: string,
-    numero_professionnel: number,
-    tel_perso: number,
-    tel_pro: number,
-    adresse: object
+    nom: String,
+    prenom: String,
+    numeroProfessionnel: number,
+    telPro: String,
+    telPerso: String,
+    adresse: Adresse
 }

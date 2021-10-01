@@ -7,13 +7,17 @@ import { AppComponent } from './app.component';
 import { InfirmieresComponent } from './components/infirmieres/infirmieres.component';
 import { PatientsComponent } from './components/patients/patients.component';
 import { NavComponent } from './components/nav/nav.component';
+import { PatientsCardComponent } from './components/patients/patients-card/patients-card.component';
+import { InfirmieresCardComponent } from './components/infirmieres/infirmieres-card/infirmieres-card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     InfirmieresComponent,
     PatientsComponent,
-    NavComponent
+    NavComponent,
+    PatientsCardComponent,
+    InfirmieresCardComponent
   ],
   imports: [
     BrowserModule,
