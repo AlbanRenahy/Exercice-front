@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  medical_url: "http://localhost:8080"
 };
